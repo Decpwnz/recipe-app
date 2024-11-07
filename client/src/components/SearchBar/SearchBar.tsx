@@ -19,7 +19,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
   }
 
   return (
-    <ContentPaper onSubmit={handleSubmit}>
+    <ContentPaper component="form" onSubmit={handleSubmit}>
       <InputBase
         value={searchValue}
         onChange={handleInputChange}

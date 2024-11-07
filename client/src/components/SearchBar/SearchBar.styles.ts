@@ -1,6 +1,6 @@
-import { Paper, styled } from '@mui/material'
+import { Paper, PaperProps, styled } from '@mui/material'
 
-export const ContentPaper = styled(Paper)(() => ({
+export const ContentPaper = styled(Paper)<PaperProps>(() => ({
   display: 'flex',
   width: '400px',
   margin: '0 auto',
