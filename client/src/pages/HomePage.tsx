@@ -1,5 +1,16 @@
+import SearchBar from '../components/SearchBar/SearchBar'
+
 function HomePage() {
-  return <h1>HomePage</h1>
+  const handleSearch = (query: string) => {
+    console.log('searching for:', query)
+  }
+
+  return (
+    <>
+      <h1>HomePage</h1>
+      <SearchBar onSearch={handleSearch} />
+    </>
+  )
 }
 
 export default HomePage
