@@ -7,7 +7,7 @@ import { ContentPaper } from './SearchBar.styles'
 import { SearchBarProps } from '../../types/SearchBarProps'
 
 export default function SearchBar({ onSearch }: SearchBarProps) {
-  const [searchValue, setSearchValue] = useState('')
+  const [searchValue, setSearchValue] = useState<string>('')
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchValue(e.target.value)
@@ -16,6 +16,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     onSearch(searchValue)
+    setSearchValue('')
   }
 
   return (
