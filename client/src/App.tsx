@@ -1,7 +1,12 @@
+import { Outlet } from 'react-router-dom'
+
+import ButtonAppBar from './components/AppBar'
+
 function App() {
   return (
     <>
-      <h1>minor change</h1>
+      <ButtonAppBar />
+      <Outlet />
     </>
   )
 }
