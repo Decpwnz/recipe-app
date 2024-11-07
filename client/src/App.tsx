@@ -1,12 +1,15 @@
 import { Outlet } from 'react-router-dom'
 
-import ButtonAppBar from './components/AppBar'
+import AppBar from './components/AppBar'
+import PageContainer from './components/PageContainer'
 
 function App() {
   return (
     <>
-      <ButtonAppBar />
-      <Outlet />
+      <AppBar />
+      <PageContainer>
+        <Outlet />
+      </PageContainer>
     </>
   )
 }
